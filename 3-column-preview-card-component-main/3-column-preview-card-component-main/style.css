@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+p {
+  margin-top: 0;
+}
+.card-container {
+  width: fit-content;
+  overflow: hidden;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1010px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  height: 300px;
+  align-items: flex-start;
+  width: 200px;
+  color: white;
+  padding: 4rem;
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.card-img {
+  width: 3.5rem;
+}
+.card-title {
+  font-family: "Big Shoulders Display", cursive;
+}
+.card-description {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.card-btn {
+  padding: 0.8rem 1.6rem;
+  border: 1px solid white;
+  border-radius: 100vh;
+  background-color: white;
+  margin-top: auto;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.card-btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.cyan {
+  color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
