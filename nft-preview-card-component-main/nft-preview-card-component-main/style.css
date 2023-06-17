@@ -1,0 +1,113 @@
+body{
+    background-color:hsl(217, 54%, 11%);
+}
+.card {
+  width: 325px;
+  height: 565px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 16px;
+  margin-inline: auto;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: hsl(215, 51%, 70%);
+  padding: 36px;
+  font-size:18px;
+  position: relative;
+}
+
+.view-modal{
+    position: absolute;
+    z-index: 5;
+    background-color:hsla(178, 100%, 50%, 0.527);
+    width: 325px;
+    height: 325px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity:0;
+    transition: opacity 0.45s;
+}
+
+.view-modal:hover{
+    cursor: pointer;
+    opacity: 1;
+    
+
+}
+.view-modal::content:hover{
+    opacity:1;
+}
+.main-img {
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.title{
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+    margin-top: 15px;
+    color: white;
+    transition: color 0.25s;
+}
+
+.title:hover,
+.bold:hover{
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.description{
+    margin-bottom: 0%;
+    font-weight: 300;
+    margin-right: 30px;
+}
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 0;
+}
+.time,
+.eth {
+  display: flex;
+  align-items: center;
+}
+
+.time-icon,
+.icon {
+  margin-right: 8px;
+}
+.amount{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.card-footer{
+    border-top: hsl(215, 32%, 27%) 1px solid;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 14px;
+    margin-bottom: 0;
+
+    
+    
+}
+
+.profile-picture{
+    width:40px;
+    height:40px;
+    margin-right: 24px;
+    border: white solid 2px;
+    border-radius: 100%;
+}
+
+.bold{
+    color: white;
+    font-weight: 600;
+    transition: color 0.25s;
+}
