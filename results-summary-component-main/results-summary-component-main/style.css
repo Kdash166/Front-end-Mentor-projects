@@ -81,6 +81,7 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 7px;
+  text-align: center;
 }
 
 .results-breakdown-container {
@@ -174,7 +175,7 @@ body {
     margin-inline: auto;
     width: 620px;
     height: 400px;
-    box-shadow: 0 5px 35px grey;
+    box-shadow: 15px 15px 35px rgba(185, 184, 184, 0.295);
     overflow: hidden;
     border-radius: 20px;
   }
