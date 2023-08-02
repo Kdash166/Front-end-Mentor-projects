@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+  height: auto;
+}
+
+.background-div {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.background-mobile-top,
+.background-mobile-bottom {
+  z-index: 1;
+  width: 100vw;
+}
+
+.background-desktop-top,
+.background-desktop-bottom {
+  display: none;
+}
+
+.container-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.main-container {
+  position: absolute;
+  top: 0;
+  width: 325px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 30px;
+  z-index: 5;
+}
+
+.text-wrapper,
+.ratings-container,
+.buyercard-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-text {
+  padding: 0 30px;
+  font-weight: 700;
+  font-size: 32px;
+  color: hsl(300, 43%, 22%);
+  text-align: center;
+}
+.title-description {
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 0 14px;
+  margin-top: 0;
+  color: hsl(303, 10%, 53%);
+}
+
+.ratings-container {
+  width: 308px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 24%, 96%);
+  align-items: center;
+  margin: 5px;
+}
+.stars-container {
+  flex-direction: row;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+
+.stars-information {
+  font-weight: 600;
+  margin-top: 10px;
+  padding-top: 0;
+  color: hsl(300, 43%, 22%);
+}
+
+.added-padding {
+  margin-bottom: 30px;
+}
+
+.buyercard {
+  padding: 25px;
+  border-radius: 4px;
+  height: 185px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+}
+.profile-info-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.profile-thumb {
+  width: 38px;
+  height: 38px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.namecontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3px;
+  font-weight: 600;
+  color: white;
+}
+.buyerstatus {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  color: hsl(333, 80%, 67%);
+}
+
+.quotetext {
+  line-height: 1.5rem;
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .background-mobile-top,
+  .background-mobile-bottom {
+    display: none;
+  }
+
+  .background-desktop-top,
+  .background-desktop-bottom {
+    z-index: 1;
+    
+    display:initial;
+    height:350px;
+  }
+  .container-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width:91.5%;
+    margin: 50px;
+    
+  }
+
+  /* text and title responsivity */
+  .text-wrapper {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .title-text,
+  .title-description {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  .title-text {
+    font-size: 36px;
+    margin-bottom: 25px;
+    padding-right: 50px;
+  }
+  .title-description{
+    font-size: 14px;
+  }
+
+  /* ratings and stars layout change */
+  .ratings-wrapper {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+  }
+
+  .ratings-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 350px;
+    height: 50px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    
+
+  }
+
+  .ratings-container:nth-child(2) {
+    margin-left: 45px;
+  }
+  .ratings-container:nth-child(3) {
+    margin-left: 90px;
+  }
+
+  .stars-container,
+  .stars-information {
+    padding: 0;
+    margin: 0;
+  }
+/* buyerscard adaptions/ responsivity */
+  .buyercard-wrapper {
+   
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: row;
+  }
+  .buyercard:nth-child(2){
+    margin-top: 20px;
+  }
+
+  .buyercard:nth-child(3){
+    margin-top: 40px;
+  }
+
+  .buyercard{
+    height:150px;
+  }
+  .quotetext{
+    font-size: 12px;
+
+  } 
+}
